@@ -73,7 +73,10 @@ function Skills() {
                   class="card col-lg-3 m-2 p-2 text-center align-center justify-content-center position-relative"
                   style={{ width: "200px", height: "200px" }}
                 >
-                  <img className="text-center align-center justify-content-center position-absolute top-50 start-50 translate-middle" src={skill} class="card-img-top" alt={id} style={{ width: "150px", height: "150px" }} />
+                  <div className="justify-content-center position-absolute top-50 start-50 translate-middle">
+                  <img  src={skill} className="card-img-top" alt={id} style={{ width: "150px", height: "150px" }} />
+                  </div>
+                  
                 </div>
               );
             })}

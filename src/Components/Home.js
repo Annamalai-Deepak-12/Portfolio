@@ -6,6 +6,7 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Profile from "../Assets/Profile.jpg"
 
 library.add(faGithub, faLinkedin);
 
@@ -32,7 +33,7 @@ function Home() {
              
             <div className="col-lg-2">
                 <a
-                  href="https://www.linkedin.com/in/annamalai-deepak-ramasamy-478391255/"
+                  href="https://github.com/Annamalai-Deepak-12"
                   target="_blank"
                 >
                   <span className="fs-1 m-5 git_color ">
@@ -68,9 +69,9 @@ function Home() {
           </div>
         </div>
         <div className="col-lg-4 mt-5">
-          <img
-            className="profile_pic"
-            src="https://drive.google.com/file/d/1XT529iNsx_JePY-KR4QIbNj1fiMzNAuL/view?usp=share_link"
+          <img 
+            className="container-fluid"
+            src={Profile}
           />
         </div>
       </div>

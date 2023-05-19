@@ -1,5 +1,13 @@
-.git_color{
-  background-color: black;
-  height: 30px;
-  width: 30px;
+
+
+
+.skillcard:hover{
+  box-shadow: 0 0 8px grey;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  
 }
+
+/* .skillimg {
+  
+} */

@@ -1,18 +1,44 @@
-import React from 'react'
+import React from "react";
+import Wallpaper from "../Assets/Wallpaper.png";
 
 function About() {
   return (
-    <div className=' container mt-5 text-center justify-content-center' id='navbarabout'>
+    <div
+      className=" container mt-5 mb-5  justify-content-center"
+      id="navbarabout"
+    >
       <div>
-        <h1 className='m-5 px-5'>About</h1>
+        <h1 className="m-4 px-5 text-center">About</h1>
       </div>
-      <div className='col-lg-12 p-3'>
-        <h4 className='col-lg-12 p-3'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.</h4>
-        <h4 className='col-lg-12 p-3'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.</h4>
+      <div className="col-lg-12 mb-5 ">
+        <div className="row">
+          <div className="col-lg-6 p-3">
+            <img className="container-fluid mt-5 p-3 " src={Wallpaper} style={{borderRadius:"50%"}} />
+          </div>
+          <div className="col-lg-6">
+            <h4 className="mt-5  pt-3">
+              A dedicated Full stack web Developer based in Warsaw Poland📍
+            </h4>
+            <p style={{ fontSize: "20px" }} className="mt-5 mb-3 pt-3">
+              As a Junior Full Stack Developer, I am excited to embark on my
+              journey in the world of web development.I have acquired a strong
+              foundation in front-end and back-end development. I am proficient
+              in HTML, CSS, and JavaScript for building responsive and
+              user-friendly interfaces. I also have experience with React.js,
+              which allows me to create dynamic and interactive web
+              applications. On the server side, I have worked extensively with
+              Node.js and Express.js to develop robust APIs and handle data
+              manipulation. I am comfortable working with NoSQL databases like
+              MongoDB to store and retrieve data efficiently. Additionally, I
+              have knowledge of RESTful principles and understand the importance
+              of clean code and scalability.
+            </p>
+          </div>
+        </div>
       </div>
-      <hr/>
+      <hr />
     </div>
-  )
+  );
 }
 
 export default About;

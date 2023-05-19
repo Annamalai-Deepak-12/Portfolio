@@ -24,7 +24,7 @@ function Contact() {
   <label for="floatingTextarea2">Message</label>
 </div>
 <div className=" d-grid gap-2 d-flex justify-content-center m-3">
-        <button type="submit" class="btn btn-primary ">
+        <button type="submit" class="btn btn-dark ">
           Let's Talk
         </button>
         </div>

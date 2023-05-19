@@ -4,12 +4,12 @@ import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Profile from "../Assets/Profile.jpg"
 
-library.add(faGithub, faLinkedin,faEnvelope);
+library.add(faGithubSquare, faLinkedin,faEnvelope);
 
 function Home() {
   return (
@@ -41,7 +41,7 @@ function Home() {
                   target="_blank"
                 >
                   <span className="fs-1 m-5 git_color ">
-                    <FontAwesomeIcon icon={faGithub} inverse />
+                  <FontAwesomeIcon icon={faGithubSquare} style={{color: "#000000",}} />
                   </span>
                 </a>
               </div>
@@ -84,7 +84,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 mt-5 pt-5">
+        <div className="col-lg-4 mt-5 pt-2">
           <img 
             className="container-fluid"
             src={Profile}

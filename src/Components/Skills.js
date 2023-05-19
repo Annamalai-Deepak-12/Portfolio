@@ -1,32 +1,59 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Html from "../Assets/Html.png"
+import Css from "../Assets/Css.png"
+import Bootstrap from "../Assets//Bootstrap.png"
+import Js from "../Assets/Js.png"
+import _React from "../Assets/_React.png"
+import Redux from "../Assets/Redux.png"
+import Mongodb from "../Assets/Mongodb.png"
+import Mysql from "../Assets/Mysql.png"
+import Nodejs from "../Assets/Nodejs.png"
+import Express from "../Assets/Expressjs.png"
+
 
 function Skills() {
   const skills = [
     {
       id: 1,
-      skill: "",
+      skill: Html,
     },
     {
       id: 2,
-      skill: "",
+      skill: Css,
     },
     {
       id: 3,
-      skill: "",
+      skill: Bootstrap,
     },
     {
       id: 4,
-      skill: "",
+      skill: Js,
     },
     {
       id: 5,
-      skill: "",
+      skill: _React,
     },
     {
       id: 6,
-      skill: "",
+      skill: Redux,
     },
+    {
+      id: 7,
+      skill: Mongodb,
+    },
+    {
+      id: 8,
+      skill: Mysql,
+    },
+    {
+      id: 9,
+      skill: Nodejs,
+    },
+    {
+      id: 9,
+      skill: Express,
+    }
   ];
 
   return (
@@ -43,10 +70,10 @@ function Skills() {
               return (
                 <div
                   key={id}
-                  class="card col-lg-3 m-2 p-2"
+                  class="card col-lg-3 m-2 p-2 text-center align-center justify-content-center position-relative"
                   style={{ width: "200px", height: "200px" }}
                 >
-                  <img src={skill} class="card-img-top" alt={id} />
+                  <img className="text-center align-center justify-content-center position-absolute top-50 start-50 translate-middle" src={skill} class="card-img-top" alt={id} style={{ width: "150px", height: "150px" }} />
                 </div>
               );
             })}

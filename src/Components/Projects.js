@@ -1,11 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Html from "../../Assets/Html.png"
+import Css from "../../Assets/Css.png"
 
 function Projects() {
   const skills = [
     {
       id: 1,
-      skill: "https://picsum.photos/200/300",
+      skill: Html,
     },
     {
       id: 2,

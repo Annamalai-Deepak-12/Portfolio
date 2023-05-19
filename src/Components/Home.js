@@ -6,9 +6,10 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Profile from "../Assets/Profile.jpg"
 
-library.add(faGithub, faLinkedin);
+library.add(faGithub, faLinkedin,faEnvelope);
 
 function Home() {
   return (
@@ -30,6 +31,9 @@ function Home() {
               creating a new and strong web application.{" "}
             </h3>
             <div className="col-lg-8">
+              <div className="row">
+
+              </div>
              
             <div className="col-lg-2">
                 <a
@@ -42,7 +46,7 @@ function Home() {
                 </a>
               </div>
 
-              <div>
+              <div className="col-lg-2">
                 <a
                   href="https://www.linkedin.com/in/annamalai-deepak-ramasamy-478391255/"
                   target="_blank"
@@ -53,14 +57,26 @@ function Home() {
                 </a>
               </div>
 
-              <div>
+              <div className="col-lg-2">
                 <a
                   href="https://drive.google.com/file/d/1Vu1oRpx6FAqy9SP9K_bA9wraFa5i_uBl/view?usp=share_link"
                   target="_blank"
                 >
                   <span className="fs-1 m-5 " style={{ color: "black" }}>
                     <button type="button" class="btn btn-dark mb-2">
-                      Resume
+                      Resume 
+                    </button>
+                  </span>
+                </a>
+              </div>
+              <div className="col-lg-2">
+                <a
+                  href="mailto:annamalaideepakr@gmail.com"
+                  target="_blank"
+                >
+                  <span className="fs-1 m-5 " style={{ color: "black" }}>
+                    <button type="button" class="btn btn-dark mb-2">
+                      Email <FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} />
                     </button>
                   </span>
                 </a>
@@ -68,7 +84,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="col-lg-4 mt-5">
+        <div className="col-lg-4 mt-5 pt-5">
           <img 
             className="container-fluid"
             src={Profile}

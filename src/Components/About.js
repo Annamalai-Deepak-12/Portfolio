@@ -13,14 +13,18 @@ function About() {
       <div className="col-lg-12 mb-5 ">
         <div className="row">
           <div className="col-lg-6 p-3">
-            <img className="container-fluid mt-5 p-3 " src={Wallpaper} style={{borderRadius:"50%"}} />
+            <img
+              className="container-fluid mt-5 p-3 "
+              src={Wallpaper}
+              style={{ borderRadius: "50%" }}
+            />
           </div>
           <div className="col-lg-6">
             <h4 className="mt-5  pt-3">
               A dedicated Full stack web Developer based in Warsaw Poland📍
             </h4>
             <p style={{ fontSize: "20px" }} className="mt-5 mb-3 pt-3">
-              As a Junior Full Stack Developer, I am excited to embark on my
+              As a Junior Full-Stack Developer, I am excited to embark on my
               journey in the world of web development.I have acquired a strong
               foundation in front-end and back-end development. I am proficient
               in HTML, CSS, and JavaScript for building responsive and

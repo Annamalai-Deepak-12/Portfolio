@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import NavBAr from "./Components/NavBAr";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
@@ -16,8 +14,8 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <Projects/>
-      <Contact/>
+      <Projects />
+      <Contact />
     </div>
   );
 }

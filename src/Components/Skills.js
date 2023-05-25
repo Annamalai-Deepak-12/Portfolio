@@ -1,16 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Html from "../Assets/Html.png"
-import Css from "../Assets/Css.png"
-import Bootstrap from "../Assets//Bootstrap.png"
-import Js from "../Assets/Js.png"
-import _React from "../Assets/_React.png"
-import Redux from "../Assets/Redux.png"
-import Mongodb from "../Assets/Mongodb.png"
-import Mysql from "../Assets/Mysql.png"
-import Nodejs from "../Assets/Nodejs.png"
-import Express from "../Assets/Expressjs.png"
+import Html from "../Assets/Html.png";
+import Css from "../Assets/Css.png";
+import Bootstrap from "../Assets//Bootstrap.png";
+import Js from "../Assets/Js.png";
+import _React from "../Assets/_React.png";
+import Redux from "../Assets/Redux.png";
+import Mongodb from "../Assets/Mongodb.png";
+import Mysql from "../Assets/Mysql.png";
+import Nodejs from "../Assets/Nodejs.png";
+import Express from "../Assets/Expressjs.png";
 import "../App.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 function Skills() {
   const skills = [
@@ -53,7 +54,7 @@ function Skills() {
     {
       id: 9,
       skill: Express,
-    }
+    },
   ];
 
   return (
@@ -61,22 +62,25 @@ function Skills() {
       <div className="row">
         <div className="col-lg-12 col-sm-12  text-center align-center">
           <div className="text-center">
-          <h1 className="align-center">Technical Skills </h1>
-          <p className="m-3">These are the technologies I've worked with</p>
+            <h1 className="align-center">Technical Skills </h1>
+            <p className="m-3">These are the technologies I've worked with</p>
           </div>
-          
           <div className="row d-flex justify-content-center ">
             {skills.map(({ id, skill }) => {
               return (
                 <div
                   key={id}
-                  class="card col-lg-3 m-2 p-2 col-sm-6 text-center align-center justify-content-center position-relative  skillcard" 
-                  style={{ width: "200px", height: "200px",  }}
+                  class="card col-lg-3 m-2 p-2 col-sm-6 text-center align-center justify-content-center position-relative  skillcard"
+                  style={{ width: "200px", height: "200px" }}
                 >
                   <div className="justify-content-center position-absolute top-50 start-50 translate-middle skillimg">
-                  <img  src={skill} className="card-img-top" alt={id} style={{ width: "150px", height: "150px" }} />
+                    <img
+                      src={skill}
+                      className="card-img-top"
+                      alt={id}
+                      style={{ width: "150px", height: "150px" }}
+                    />
                   </div>
-                  
                 </div>
               );
             })}

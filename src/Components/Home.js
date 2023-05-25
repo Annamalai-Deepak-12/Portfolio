@@ -7,9 +7,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import Profile from "../Assets/Profile.jpg"
+import Profile from "../Assets/Profile.jpg";
 
-library.add(faGithubSquare, faLinkedin,faEnvelope);
+library.add(faGithubSquare, faLinkedin, faEnvelope);
 
 function Home() {
   return (
@@ -21,7 +21,7 @@ function Home() {
             <h1 type="button " class="labelInput p-5">
               Hi i'm Annamalai Deepak
             </h1>
-            <h2 className="mt-3 ps-5">Front-End Developer</h2>
+            <h2 className="mt-3 ps-5">Full-Stack Developer</h2>
             <h3 className="mt-3 ps-5">
               The goal of working on a project that solves problems.
             </h3>
@@ -31,21 +31,20 @@ function Home() {
               creating a new and strong web application.{" "}
             </h3>
             <div className="col-lg-8">
-              <div className="row">
-
-              </div>
-             
-            <div className="col-lg-2">
+              <div className="row"></div>
+              <div className="col-lg-2">
                 <a
                   href="https://github.com/Annamalai-Deepak-12"
                   target="_blank"
                 >
                   <span className="fs-1 m-5 git_color ">
-                  <FontAwesomeIcon icon={faGithubSquare} style={{color: "#000000",}} />
+                    <FontAwesomeIcon
+                      icon={faGithubSquare}
+                      style={{ color: "#000000" }}
+                    />
                   </span>
                 </a>
               </div>
-
               <div className="col-lg-2">
                 <a
                   href="https://www.linkedin.com/in/annamalai-deepak-ramasamy-478391255/"
@@ -56,7 +55,6 @@ function Home() {
                   </span>
                 </a>
               </div>
-
               <div className="col-lg-2">
                 <a
                   href="https://drive.google.com/file/d/1Vu1oRpx6FAqy9SP9K_bA9wraFa5i_uBl/view?usp=share_link"
@@ -64,19 +62,20 @@ function Home() {
                 >
                   <span className="fs-1 m-5 " style={{ color: "black" }}>
                     <button type="button" class="btn btn-dark mb-2">
-                      Resume 
+                      Resume
                     </button>
                   </span>
                 </a>
               </div>
               <div className="col-lg-2">
-                <a
-                  href="mailto:annamalaideepakr@gmail.com"
-                  target="_blank"
-                >
+                <a href="mailto:annamalaideepakr@gmail.com" target="_blank">
                   <span className="fs-1 m-5 " style={{ color: "black" }}>
                     <button type="button" class="btn btn-dark mb-2">
-                      Email <FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} />
+                      Email{" "}
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        style={{ color: "#ffffff" }}
+                      />
                     </button>
                   </span>
                 </a>
@@ -85,10 +84,7 @@ function Home() {
           </div>
         </div>
         <div className="col-lg-4 mt-5 pt-2">
-          <img 
-            className="container-fluid"
-            src={Profile}
-          />
+          <img className="container-fluid" src={Profile} />
         </div>
       </div>
       <hr />

@@ -13,12 +13,12 @@ function NavBAr() {
     {
       id: 1,
       link: "Home",
-      name : "home"
+      name: "home",
     },
     {
       id: 2,
       link: "About",
-      name : "about"
+      name: "about",
     },
     {
       id: 3,
@@ -39,8 +39,7 @@ function NavBAr() {
       <div>
         <h1
           className="navbar-brand fs-1"
-          href="#"
-          style={{ cursor: "pointer" }}
+          style={{ cursor: "pointer", fontFamily: "fantasy" }}
         >
           Deepak
         </h1>
@@ -57,10 +56,9 @@ function NavBAr() {
             <FontAwesomeIcon icon={faXmark} />
           )}
         </div>
-
         {nav && (
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-            {links.map(({ id, link, name}) => {
+            {links.map(({ id, link, name }) => {
               return (
                 <li
                   key={id}
@@ -76,7 +74,6 @@ function NavBAr() {
           </ul>
         )}
       </div>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
           {links.map(({ id, link }) => {
